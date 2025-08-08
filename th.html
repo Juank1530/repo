@@ -5,85 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAUSAL DE DEVOLUCIONES</title>
     <link rel="stylesheet" href="../../resources/css/styles.css">
-    <link rel="stylesheet" href="../../libs/boostrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../libs/fontawesome/css/all.min.css">
 </head>
-<body class="bg-light">
-    <div class=" layout-container">
+<body>
+    <div class="layout-container">
+        <!-- Menú Lateral -->
         <nav class="menu-lateral">
             <div class="logo-container">
-                <a href="../../index.html">Inicio</a>
+                <a href="../../index.html" class="d-block py-3 px-3">
+                    <img src="../../Imagenes/logo.svg" alt="Inicio" class="logo">
+                </a>
             </div>
-            <div class="menu-content">
+            <div class="menu-content px-3">
                 <h4 class="menu-title">Menú</h4>
-                <ul>
+                <ul class="menu-list">
                     <li>
-                        <a href="#cuenta" class="menu-link">Créditos OVN</a>
+                        <a href="#cuenta" class="menu-link active">
+                            <i class="fas fa-file-invoice menu-icon"></i>
+                            Créditos OVN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pagos" class="menu-link">
+                            <i class="fas fa-credit-card menu-icon"></i>
+                            Problemas con pagos
+                        </a>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li>
+                        <a href="../../index.html" class="menu-link menu-home">
+                            <i class="fas fa-home menu-icon"></i>
+                            Volver al inicio
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
-    </div>
-    <main class="content-main">
-        <div class="container py-4">
-            <!-- Título destacado -->
-            <h1 class="titulo-destacado">DEVOLUCIONES FRECUENTES</h1>
 
-        <!-- Sección de FAQs -->
-        <div id="Devoluciones créditos OVN" class="faq-section">
-            <!-- Categoría 1 -->
-            <div class="card-faq">
-                <div class="card-body p-consistente">
-                    <h2 id="cuenta" class="text-corporativo border-bottom pb-2">Devoluciones créditos OVN</h2>
-                    
-                    <div class="card-faq">
-                        <h3>¿Cómo evitar devoluciones para créditos OVN?</h3>
-                        <p>Si has radicado un crédito OVN sigue estos pasos para no generar devolución.</p>
-                        <a href="#solucion-contrasena" class="btn-corporativo">Ver solución</a>
-                    </div>
-                   
-            </div>
+        <!-- Contenido Principal -->
+        <main class="content-main">
+            <div class="container-fluid px-4 py-3">
+                <h1 class="titulo-destacado mb-4">DEVOLUCIONES FRECUENTES</h1>
 
-            <!-- Categoría 2 -->
-            <div class="faq-category card mb-4">
-                <div class="card-body">
-                    <h2 id="pagos" class="category-title">Problemas con Pagos</h2>
-                    
-                    <div class="faq-question">
-                        <h3>No se ha procesado mi pago, ¿qué hago?</h3>
-                        <p>Soluciones para cuando un pago no se completa correctamente.</p>
-                        <a href="#solucion-pago" class="solution-link">Ver solución</a>
+                <!-- Sección de FAQs -->
+                <div class="faq-section">
+                    <!-- Categoría 1 -->
+                    <div id="cuenta" class="card mb-4 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="text-corporativo border-bottom pb-2">Devoluciones créditos OVN</h2>
+                            
+                            <div class="card-faq mt-3">
+                                <h3>¿Cómo evitar devoluciones para créditos OVN?</h3>
+                                <p class="mb-3">Si has radicado un crédito OVN sigue estos pasos para no generar devolución.</p>
+                                <a href="#solucion-contrasena" class="btn-corporativo">Ver solución</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Sección de soluciones -->
-        <h2 id="soluciones" class="text-corporativo mb-4">Soluciones Detalladas</h2>
-        
-        <div class="card mb-4 border-0 shadow-sm">
-            <div class="card-body p-consistente">
-                <h3 id="solucion-contrasena" class="text-corporativo">Solución: Novedad</h3>
-                <p>Para las radicaciones de origen OVN es obligatorio diligenciar el número de cuenta del cliente en el apartado Autorización Débito automático que se encuentra ubicado en la parte final del Formato 614 SOLICITUD DE PRODUCTOS CLIENTES PERSONA NATURAL y/o del formato 248 ANEXO - SOLICITUD DE VINCULACIÓN Y ENTREVISTA PERSONA NATURAL.</p>
-                
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <img src="Imagenes/OVN 1.png" alt="imagen1" class="img-faq">
-                    </div>
-                    <div class="col-md-6">
-                        <img src="Imagenes/OVN 2.png" alt="imagen2" class="img-faq">
+                    <!-- Categoría 2 -->
+                    <div id="pagos" class="card mb-4 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h2 class="text-corporativo border-bottom pb-2">Problemas con Pagos</h2>
+                            
+                            <div class="card-faq mt-3">
+                                <h3>No se ha procesado mi pago, ¿qué hago?</h3>
+                                <p class="mb-3">Soluciones para cuando un pago no se completa correctamente.</p>
+                                <a href="#solucion-pago" class="btn-corporativo">Ver solución</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Sección de soluciones -->
+                <h2 id="soluciones" class="text-corporativo my-4">Soluciones Detalladas</h2>
                 
-                <a href="#cuenta" class="btn-corporativo mt-3">Volver a preguntas</a>
+                <div class="card mb-4 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h3 id="solucion-contrasena" class="text-corporativo mb-3">Solución: Novedad</h3>
+                        <p>Para las radicaciones de origen OVN es obligatorio diligenciar el número de cuenta del cliente en el apartado Autorización Débito automático que se encuentra ubicado en la parte final del Formato 614 SOLICITUD DE PRODUCTOS CLIENTES PERSONA NATURAL y/o del formato 248 ANEXO - SOLICITUD DE VINCULACIÓN Y ENTREVISTA PERSONA NATURAL.</p>
+                        
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <img src="../../Imagenes/OVN1.png" alt="Formulario OVN" class="img-faq img-fluid rounded">
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../../Imagenes/OVN2.png" alt="Anexo OVN" class="img-faq img-fluid rounded">
+                            </div>
+                        </div>
+                        
+                        <a href="#cuenta" class="btn-corporativo mt-3">Volver a preguntas</a>
+                    </div>
+                </div>
+
+                <a href="../../index.html" class="btn-corporativo d-block mx-auto text-center py-2 px-4 mb-4">Volver al inicio</a>
             </div>
-        </div>
-
-        <a href="#" class="btn-corporativo d-block mx-auto text-center py2 px-4">Volver al inicio</a>
-    </main>
-
+        </main>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="../../libs/boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
